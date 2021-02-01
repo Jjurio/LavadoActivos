@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card card-outline-watcher">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">Listado de Ponderaciones</h4>
+            </div>
+            <div *ngIf="_ponderacionService.loading" class="form-group text-center mt-3">
+                <div class="spinner-grow text-orange" role="status"></div>
+                <p class="spinner__label">Cargando...</p>
+            </div>
+            <div class="card-body">
+                <div *ngIf="ponderaciones.length > 0 && !_ponderacionService.loading" class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Numero</th>
+                                <th class="text-center">Factor</th>
+                                <th class="text-center">Descripcion</th>
+                                <th class="text-center">Tipo Ponderacion</th>
+                                <th class="text-nowrap"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr *ngFor="let ponderacion of ponderaciones | paginate: { itemsPerPage: 10, currentPage: paginaActual }; let i = index">
+                                <td>{{ponderacion.subfactor_id}} </td>
+                                <td>{{ponderacion.factor}} </td>
+                                <td>{{ponderacion.descripcion}}</td>
+                                <td>{{ponderacion.tipo_ponderacion}}</td>
+                                <td class="text-nowrap">
+                                    <button type="button" class="btn waves-effect waves-light btn-sm btn-info" [routerLink]="[ponderacion.url,ponderacion.subfactor_id]" title="editar tipo documento"> <i class="fa fa-pencil"></i></button> &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <pagination-controls (pageChange)="paginaActual = $event" maxSize="5" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+                    </div>
+                </div>
+                <div *ngIf="!(ponderaciones.length > 0) && !_ponderacionService.loading">
+                    No se encontraron registros...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

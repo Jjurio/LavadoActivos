@@ -1,0 +1,98 @@
+<div class="form-row">
+    <div class="form-group col-md-2">
+        <input #medico class="form-control" type="text" placeholder="Codigo Cliente">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input #paciente class="form-control" type="text" placeholder="Numero Reporte">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input #paciente class="form-control" type="text" placeholder="DOI">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input #paciente class="form-control" type="text" placeholder="ROS">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input class="form-control" type="date" style="width: 100%;">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input class="form-control" type="date" style="width: 100%;">
+    </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group col-md-3">
+        <input #medico class="form-control" type="text" placeholder="Descripcion">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input #paciente class="form-control" type="text" placeholder="Estado">
+    </div>
+
+    <div class="form-group col-md-7 text-right">
+        <button type="button" class="btn waves-effect waves-light btn btn-info"><i class="fa fa-filter"></i>&nbsp;&nbsp;Buscar</button> &nbsp;
+        <button type="button" class="btn waves-effect waves-light btn btn-info"><i class="fa fa-refresh"></i>&nbsp;&nbsp;Limpiar</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card card-outline-watcher">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">Resultado de búsqueda</h4>
+            </div>
+            <!-- <div *ngIf="_citaService.loading" class="form-group text-center mt-3">
+                <div class="spinner-grow text-orange" role="status"></div>
+                <p class="spinner__label">Cargando...</p>
+            </div> -->
+            <div class="card-body">
+                <div *ngIf="alertas.length > 0 " class="table-responsive">
+                    <div class="table-responsive">
+                        <table class="table table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Código</th>
+                                    <th class="text-center">Descripción</th>
+                                    <th class="text-center">Documento</th>
+                                    <th class="text-center">Reporte</th>
+                                    <th class="text-center">ROS</th>
+                                    <th class="text-center">Fecha Reporte</th>
+                                    <th class="text-center">Estado</th>
+                                    <th class="text-nowrap"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr *ngFor="let alerta of alertas ">
+                                    <td>{{ alerta.code }}</td>
+                                    <td> {{ alerta.description }} </td>
+                                    <td> {{ alerta.id }} </td>
+                                    <td> {{ alerta.reportNumber }} </td>
+                                    <td> {{ alerta.rosNumber }} </td>
+                                    <td> {{ alerta.reportDate }} </td>
+                                    <td>
+                                        <span *ngIf="alerta.status == 'Pendiente'" class="label label-warning">Pendiente</span>
+                                        <span *ngIf="alerta.status == 'Asignado'" class="label label-warning">Asignado</span>
+                                        <span *ngIf="alerta.status == 'Por Calificar'" class="label label-warning">Por Calificar</span>
+                                        <span *ngIf="alerta.status == 'Archivado'" class="label label-success">Archivado</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <button type="button" class="btn waves-effect waves-light btn-sm btn-success" [routerLink]="['/alerta',alerta.customerID]"><i class="fa fa-search"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <div class="text-center">
+                        <pagination-controls (pageChange)="paginaActual = $event" maxSize="5" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+                    </div> -->
+                    </div>
+                    <!-- <div *ngIf="!(citas.length > 0) && !_citaService.loading">
+                    No se encontraron registros...
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </div>

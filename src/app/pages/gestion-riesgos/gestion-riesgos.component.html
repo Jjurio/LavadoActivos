@@ -1,0 +1,331 @@
+<div class="contenedor-porcen">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="ope-reportadas">
+                        <div class="filtro-ope-reportadas">
+                            <div class="header_filtro-LugarOpe">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <span>
+                                            Lugar de las operaciones reportadas en el país
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+
+                                            <div class="col-md-1">
+                                                <!--<input type="image" src="img/icons/lista.png" class="img-filtros">-->
+                                                <i id="fa-header-list" class="fas fa-list"></i>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <!--<input type="image" src="img/icons/nofiltro.png" class="img-filtros">-->
+                                                <i id="fa-header-filter" class="fas fa-filter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="UbigeoD" class="body_filtro-ope-reportadas">
+                                @*
+                                <div class="row container-buttons-LugarOpe">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Paraguay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Panamá">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Amambay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Boquerón">
+                                </div>
+                                <div class="row container-buttons-LugarOpe">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Paraguay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Panamá">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Amambay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Boquerón">
+                                </div>
+                                <div class="row container-buttons-LugarOpe">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Paraguay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Panamá">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Amambay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Boquerón">
+                                </div>
+                                <div class="row container-buttons-LugarOpe">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Paraguay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Panamá">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Amambay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Boquerón">
+                                </div>
+                                <div class="row container-buttons-LugarOpe">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Paraguay">
+                                    <input class="btn_filtro-ope-reportadas" type="button" value="Alto Panamá">
+                                </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="concen-riesgo carta-material">
+                        <span>Concentración del</span><br>
+                        <span>riesgo factor territorio</span> <br>
+                        <span id="ConcentracionTerritorio" class="porcen-concen-riesgo">116%</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contenedoresReg1  carta-material">
+                        <span>Régimen de debida</span><br>
+                        <span>diligencia general:</span>
+                        <span class="porcen-contenedoresReg1">1.212</span>
+                    </div>
+                    <br>
+                    <div class="contenedoresReg2 carta-material">
+                        <span>Régimen de debida</span><br>
+                        <span>diligencia reforzado:</span>
+                        <span class="porcen-contenedoresReg1">424</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contenedoresPen1 carta-material">
+                        <span>Pendiente de revisión de</span><br>
+                        <span>debida diligencia:</span>
+                        <span class="porcen-contenedoresPEN">54,&nbsp;2%</span>
+                    </div>
+                    <br>
+                    <div class="contenedoresPen2 carta-material">
+                        <span>Control previo de debida</span><br>
+                        <span>diligencia:</span>
+                        <span class="porcen-contenedoresPEN">25,&nbsp;9%</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contenedoresHor1 carta-material">
+                        <span>Horas/analista en descarte</span><br>
+                        <span>de operaciones inusuales:</span><br>
+                        <span class="et_promHOR">Promedio</span>
+                        <span id="promedioAnalistaArhivo" class="porcen-contenedoresHOR">12.72</span>
+                    </div>
+                    <br>
+                    <div class="contenedoresHor2 carta-material">
+                        <span>Horas/analista en</span><br>
+                        <span>elaboración de ROS:</span>
+                        <span class="et_promHOR">Promedio</span>
+                        <span id="promedioAnalistaRosel" class="porcen-contenedoresHOR">13.78</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-7">
+                <table class="tablep">
+                    <thead>
+                        <tr>
+                            <th scope="col">Frecuencia de revisión</th>
+                            <th scope="col">Actividades de control</th>
+                            <th scope="col">%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aleatoria</td>
+                            <td>175</td>
+                            <td>10,7%</td>
+                        </tr>
+                        <tr>
+
+                            <td>Bimensual</td>
+                            <td>330</td>
+                            <td>20,2%</td>
+                        </tr>
+                        <tr>
+
+                            <td>Mensual</td>
+                            <td>94</td>
+                            <td>5,7%</td>
+                        </tr>
+                        <tr>
+
+                            <td>Mensual</td>
+                            <td>94</td>
+                            <td>5,7%</td>
+                        </tr>
+                        <tr>
+
+                            <td>Mensual</td>
+                            <td>94</td>
+                            <td>5,7%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="col">Total general</th>
+                            <th scope="col">1636</th>
+                            <th scope="col">100,0%</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div style="background-color: #fff; border: 1px solid #2E6CA4; width: 110px; height: 110px;
+                                 padding: 2px;border-radius: 3px;margin-top: 35%;">
+
+                            <div style="font-size: 10px; border-bottom: 1px solid #2E6CA4;">
+                                <span style=" padding-left 3px;">Año de revisión</span>
+                                <span>&nbsp;<i id="fa-header-list" class="fas fa-list"></i></span>
+                                <span>&nbsp;<i id="fa-header-filter" class="fas fa-filter"></i></span>
+                            </div>
+
+                            <div style="margin-top: 5px;">
+                                <button class="btn_AnioRevision">2018</button>
+                                <button class="btn_AnioRevision">2019</button>
+                                <button class="btn_AnioRevision">2020</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="background-color: #fff; border: 1px solid #2E6CA4; width: 120px; height: 110px;
+                                 padding: 2px;border-radius: 3px;
+                                padding-left: 4px;margin-top: 28%;">
+
+                            <div style="font-size: 10px; border-bottom: 1px solid #2E6CA4;">
+                                <span style=" padding-left 3px;">Mes de revisión</span>
+                                <span>&nbsp;&nbsp;&nbsp;<i id="fa-header-list" class="fas fa-list"></i></span>
+                                <span>&nbsp;<i id="fa-header-filter" class="fas fa-filter"></i></span>
+                            </div>
+
+                            <div style="margin-top: 5px; ">
+                                <div>
+                                    <button class="btn_MesRevision">1</button>
+                                    <button class="btn_MesRevision">2</button>
+                                    <button class="btn_MesRevision">3</button>
+                                    <button class="btn_MesRevision">4</button>
+                                </div>
+                                <div>
+                                    <button class="btn_MesRevision">5</button>
+                                    <button class="btn_MesRevision">6</button>
+                                    <button class="btn_MesRevision">7</button>
+                                    <button class="btn_MesRevision">8</button>
+                                </div>
+                                <div>
+                                    <button class="btn_MesRevision">9</button>
+                                    <button class="btn_MesRevision">10</button>
+                                    <button class="btn_MesRevision">11</button>
+                                    <button class="btn_MesRevision">12</button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div style="background-color: #fff; border: 1px solid #2E6CA4; width: 110px; height: 110px;
+                     margin-top: -21%; margin-left: 63%; margin-bottom: 20px; padding: 2px;border-radius: 3px;">
+
+             <div style="font-size: 10px; border-bottom: 1px solid #2E6CA4;">
+                 <span style=" padding-left: 3px;">Año de revisión</span>
+                 <span>&nbsp;<i id="fa-header-list" class="fas fa-list"></i></span>
+                 <span>&nbsp;<i id="fa-header-filter" class="fas fa-filter"></i></span>
+             </div>
+
+             <div style="margin-top: 5px;">
+                 <button class="btn_AnioRevision">2018</button>
+                 <button class="btn_AnioRevision">2019</button>
+                 <button class="btn_AnioRevision">2020</button>
+             </div>
+
+
+         </div>
+
+         <div style="background-color: #fff; border: 1px solid #2E6CA4; width: 120px; height: 110px;
+                     margin-top: -19.6%; margin-left: 80%; margin-bottom: 30px; padding: 2px;border-radius: 3px;
+                     padding-left: 4px;">
+
+             <div style="font-size: 10px; border-bottom: 1px solid #2E6CA4;">
+                 <span style=" padding-left: 3px;">Mes de revisión</span>
+                 <span>&nbsp;&nbsp;&nbsp;<i id="fa-header-list" class="fas fa-list"></i></span>
+                 <span>&nbsp;<i id="fa-header-filter" class="fas fa-filter"></i></span>
+             </div>
+
+             <div style="margin-top: 5px; ">
+                 <div>
+                 <button class="btn_MesRevision">1</button>
+                 <button class="btn_MesRevision">2</button>
+                 <button class="btn_MesRevision">3</button>
+                 <button class="btn_MesRevision">4</button>
+                 </div>
+                 <div>
+                 <button class="btn_MesRevision">5</button>
+                 <button class="btn_MesRevision">6</button>
+                 <button class="btn_MesRevision">7</button>
+                 <button class="btn_MesRevision">8</button>
+                 </div>
+                 <div>
+                 <button class="btn_MesRevision">9</button>
+                 <button class="btn_MesRevision">10</button>
+                 <button class="btn_MesRevision">11</button>
+                 <button class="btn_MesRevision">12</button>
+                 </div>
+
+
+             </div>
+
+
+         </div> -->
+
+
+        <div id="revisionBar">
+            <!-- <canvas id="realtime">{{ chart }}</canvas> -->
+            <div [chart]="chart"></div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="col-md-6">
+
+        <div class="contenedor">
+
+            <div id="RiesgoPN" class="carta">
+                <div [chart]="chart2"></div>
+            </div>
+
+            <div id="RiesgoPJ" class="carta">
+                <div [chart]="chart3"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div>

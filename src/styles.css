@@ -1,0 +1,385 @@
+/* You can add global styles to this file, and also import other style files */
+
+.c-white {
+    color: white;
+}
+
+.c-grey {
+    color: #b9b9b9;
+}
+
+.dark-logo {
+    max-height: 35px !important;
+}
+
+.sidebar-pie {
+    position: fixed;
+    bottom: 0;
+    width: 235px;
+    text-align: right;
+}
+
+
+/*Alerta*/
+
+.card-style {
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.card-style-resolution {
+    margin-top: 3rem;
+    width: 102%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-interno {
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    padding-top: 0.5rem;
+    width: 90%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+
+.img-card {
+    margin-top: -2.4rem;
+    margin-left: 0.5rem;
+    border: 1px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.pos-btn-aux {
+    position: absolute;
+    right: -1rem;
+    top: -18px;
+}
+
+.btn-aux {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px 0px 0px 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 32px;
+    right: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: #666666;
+}
+
+.btn-aux-2 {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px 0px 0px 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 36px;
+    right: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: #666666;
+}
+
+.btn-aux-pointer:hover {
+    cursor: pointer;
+    background-color: #191919;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+.btn-aux a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.titulo-card {
+    margin-top: 1rem;
+    color: #1A1A1A;
+    font-family: 'Doppio One', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.titulo-card-resolution {
+    margin-top: 0.5rem;
+    color: #1D97F0;
+    font-family: 'Doppio One', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.colum-card {
+    color: #818182;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 0.95rem;
+}
+
+.colum-card-firt {
+    color: #1D97F0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.colum-card-subtitle {
+    color: #1D97F0;
+    padding: 0.3rem;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 0.95rem;
+}
+
+.colum-card-texto {
+    background-color: #fff;
+    color: #818182;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 0.95rem;
+}
+
+.colum-card-color {
+    padding-left: 50%;
+    color: #818182;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 0.95rem;
+}
+
+.div-caso {
+    margin-top: 0rem;
+    padding-top: 1.25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 7rem;
+    position: relative;
+    width: 95%;
+    margin-bottom: -0.01rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    background-color: #1F9BCF;
+}
+
+.contenedor-tabs {
+    margin-top: 0.4rem;
+    margin-left: 0.8rem;
+}
+
+.lb-subtitle {
+    font-size: 0.99rem;
+    margin-top: 1rem;
+    color: #1C99F1;
+    font-weight: 500;
+}
+
+.lb-texto {
+    font-size: 0.99rem;
+    color: #69696b;
+}
+
+.carta-lg {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    background: #fff;
+    border-radius: 0px;
+    display: inline-block;
+    height: 33.1rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    margin-top: 0rem;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-left: -2px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #eceeef
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: #f7f7f9 #f7f7f9 #eceeef
+}
+
+.nav-tabs .nav-link.disabled {
+    color: #919aa1;
+    background-color: transparent;
+    border-color: transparent
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #55595c;
+    background-color: #fff;
+    border-color: #eceeef #eceeef #fff
+}
+
+#DatoReporte-tab {
+    position: relative;
+}
+
+#Observaciones-tab {
+    width: 96%;
+}
+
+#MVR-tab {
+    padding-left: 0.5rem;
+}
+
+#DatoReporte-tab,
+#Cal-Scoring-tab,
+#MVR-tab,
+#Observaciones-tab {
+    padding-top: 1.3rem;
+}
+
+.ribbon {
+    width: 0px;
+    height: 120px;
+    border-left: 50px solid #1F9BCF;
+    border-right: 50px solid #1F9BCF;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    top: 1.5rem;
+    right: 3.5rem;
+}
+
+.fa-bullseye {
+    color: rgba(10, 163, 241, 0.3);
+    font-size: 15rem;
+    margin-top: -10%;
+    margin-left: 55%;
+}
+
+.contenedor-tabla {
+    margin: 2rem 0.5rem 0rem 0rem;
+}
+
+.table-banca {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 13.5px;
+    width: 98%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table-banca th,
+.table-banca td {
+    padding: 0.2rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    color: #818182;
+}
+
+.table-banca thead th {
+    color: #fff;
+}
+
+.table-banca tfoot th {
+    color: #fff;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.p-h5 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}

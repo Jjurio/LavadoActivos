@@ -1,0 +1,55 @@
+<div class="form-row">
+    <div class="form-group col-md-4">
+        <input #descripcion (keyup)="listarClientes( descripcion.value, numero_documento.value )" class="form-control" type="text" placeholder="Nombre / Razon Social">
+    </div>
+
+    <div class="form-group col-md-2">
+        <input #numero_documento (keyup)="listarClientes( descripcion.value, numero_documento.value )" class="form-control" type="text" placeholder="Numero Documento">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card card-outline-watcher">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">Resultado de búsqueda</h4>
+            </div>
+            <div *ngIf="_clienteService.loading" class="form-group text-center mt-3">
+                <div class="spinner-grow text-orange" role="status"></div>
+                <p class="spinner__label">Cargando...</p>
+            </div>
+            <div class="card-body">
+                <div *ngIf="clientes.length > 0 && !_clienteService.loading" class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Nombre / Razon Social</th>
+                                <th class="text-center">Tipo Documento</th>
+                                <th class="text-center">Numero Documento</th>
+                                <th class="text-center">Nacionalidad</th>
+                                <th class="text-nowrap"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr *ngFor="let cliente of clientes | paginate: { itemsPerPage: 10, currentPage: paginaActual }">
+                                <td>{{cliente.descripcion}} </td>
+                                <td>{{cliente.tipo_documento}}</td>
+                                <td>{{cliente.numero_documento}}</td>
+                                <td>{{cliente.nacionalidad}}</td>
+                                <td class="text-nowrap">
+                                    <button type="button" class="btn waves-effect waves-light btn-sm btn-info" [routerLink]="['/cliente',cliente.cliente_id]" title="editar médico"> <i class="fa fa-pencil"></i></button> &nbsp;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <pagination-controls (pageChange)="paginaActual = $event" maxSize="5" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+                    </div>
+                </div>
+                <div *ngIf="!(clientes.length > 0) && !_clienteService.loading">
+                    No se encontraron registros...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

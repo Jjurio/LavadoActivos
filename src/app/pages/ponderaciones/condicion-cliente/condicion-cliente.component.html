@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card card-outline-watcher">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">{{titulo}}</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <form class="form-horizontal" (ngSubmit)="guardarCondicionCliente()" *ngIf="!_condicionClienteService.loading">
+                            <div class="form-group row">
+                                <label for="tipo_ponderacion_id" class="col-sm-2 text-right control-label col-form-label">Tipo Ponderacion</label>
+                                <div class="col-sm-3">
+                                    <select class="custom-select" [(ngModel)]="listadoCondicionCliente[0].tipo_ponderacion_id" [ngModelOptions]="{standalone: true}">
+                                        <option *ngFor="let tipoPonderacion of tiposPonderacion" [value]="tipoPonderacion.tipo_ponderacion_id" >{{tipoPonderacion.descripcion}}</option>
+                                    </select>
+                                    <br>
+                                </div>
+                            </div>
+                            <div *ngFor="let condicionCliente of listadoCondicionCliente; let i = index" class="form-group row">
+                                <label class="col-sm-2 text-right control-label col-form-label"> Descripción </label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" [value]="condicionCliente.ponderacion">
+                                </div>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" [value]="condicionCliente.ponderacion">
+                                </div>
+                            </div>
+                            <div class="form-group row text-right">
+                                <div class="col-12 text-right">
+                                    <button type="submit" class="btn btn-primary waves-effect waves-light m-r-10"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar
+                                        <!-- <span *ngIf="_tipoDocumentoService.loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+                                    </button>
+                                    <a [routerLink]="['/ponderaciones']" class="btn btn-inverse waves-effect waves-light">Cancelar</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

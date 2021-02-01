@@ -1,0 +1,49 @@
+<section id="wrapper">
+    <div class="login-register">
+        <div class="container app flex-row align-items-center">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form autocomplete="off" ngNativeValidate autocomplete="off" [formGroup]=forma (ngSubmit)="ingresar()">
+                        <div class="card-group">
+                            <div class="card p-4">
+                                <div class="card-body">
+                                    <h1>Login</h1>
+                                    <p class="text-muted">Inicie sesión en su cuenta</p>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-user"></i></div>
+                                            <input formControlName="usuario" name="usuario" type="text" class="form-control form-control-sm" placeholder="Usuario">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-lock"></i></div>
+                                            <input formControlName="password" name="password" type="password" class="form-control form-control-sm" placeholder="Contraseña">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button class="btn btn-info" type="submit">Ingresar</button>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <button class="btn btn-link px-0" type="button">¿Olvidó su contraseña?</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-info py-5 d-md-down-none" style="width:44%">
+                                <div class="card-body text-center">
+                                    <div>
+                                        <h2 style="color: #fff;">Regístrate</h2>
+                                        <p style="color: #fff;">Forma parte de Watcher System Money Lauring, creando una cuenta de administración en nuestro módulo de registro</p>
+                                        <input type="button" class="btn btn-info active mt-3" value="Empieza ahora" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

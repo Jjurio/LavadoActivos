@@ -1,0 +1,211 @@
+<section class="contenedor-section container-fluid">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- Origen del Reporte -->
+                    <div id="OrigenReporte">
+                        <div class="OrigenHeader">
+                            <p>
+                                Origen del Reporte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="fas fa-list-ul"></i>&nbsp;
+                                <i class="fas fa-filter"></i>
+                            </p>
+                        </div>
+                        <div id="OrigenReporteD" class="OrigenBody">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 mychart">
+                    <!-- Chart Indice de eficacia  -->
+
+                    <span>Indice de eficacia en la dirección de actividad sospechosa</span>
+
+                    <div style="width: 100%; height: 400px; margin: 0">
+                        <div id="container-speed" style="width: 300px; height: 190px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-4" style="width: 100%; height: 125px;">
+                    <div class="Ope-Inusual carta-material">
+                        <p class="Ope-inusual-text">Operaciones inusuales analisadas</p>
+                        <span id="OperacionesInusales" class="Ope-inusual-number"></span>
+                        <div id="img-yellow" style="background: url(../../assets/images/card_yellow.png) no-repeat;"></div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="width: 100%; height: 125px;">
+                    <div class="Ope-Sospe carta-material">
+                        <p class="Ope-sospe-text">Operaciones sospechosas reportadas</p>
+                        <span id="OperacionesSospechosas" class="Ope-sospe-number"></span>
+                        <div id="img-red" style="background: url(../../assets/images/card_red.png) no-repeat;"></div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="width: 100%; height: 125px;">
+                    <div class="Ind-falso carta-material">
+                        <p class="Ope-inusual-text">Indice de falso positivo</p>
+                        <span id="IndiceFalsoPositivo" class="Ope-inusual-number"></span>
+                        <div id="img-dislike" style="background: url(../../assets/images/dislike.png) no-repeat;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="filtroAnio carta-material2">
+                                <div class="header_filtro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <span>Año</span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-1">
+                                                    <i id="fa-header-list" class="fas fa-list"></i>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <i id="fa-header-filter" class="fas fa-filter"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="body_filtro">
+                                    <div id="Anhos" class="row container-buttons">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            @*<img src="~/Img/database3.png" style="width: 55px; margin-top: 26px; margin-left: -15px; cursor: pointer;" />*@
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4" style="width: 100%; height: 125px;">
+                    <div class="Ind-general carta-material">
+                        <p class="Ope-sospe-text">Indice general de cumplimiento</p>
+                        <span class="Ope-sospe-number">60.5 %</span>
+                        <div id="img-indgen" style="background: url(../../assets/images/indice_gen.png) no-repeat;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-5 contenedor-reporte" style="">
+            <div id="Frecu_reportes" style="height: 100%;">
+                <div [chart]="chart"></div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div id="Importe_reportes" style="height: 100%;">
+                <div [chart]="chart2"></div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <span style="color: #227447; font-weight: bold; text-align: center;">Riesgo institucional últimos 12 meses :</span>
+
+            <table class="tablep">
+                <thead>
+                    <tr>
+                        <th scope="col">2017</th>
+                        <th scope="col">Vr</th>
+                        <th scope="col" colspan="2">Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+
+                        <td>2</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>22</td>
+                        <td>Bajo</td>
+                        <td class="verde">verde</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>23</td>
+                        <td>Moderado</td>
+                        <td class="azul">azul</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>32</td>
+                        <td>Moderado</td>
+                        <td class="azul">azul</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>32</td>
+                        <td>Moderado</td>
+                        <td class="azul">azul</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>42</td>
+                        <td>Medio</td>
+                        <td class="amarillo">Amarillo</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</section>

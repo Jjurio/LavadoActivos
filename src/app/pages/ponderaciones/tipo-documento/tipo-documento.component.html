@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card card-outline-watcher">
+            <div class="card-header">
+                <h4 class="m-b-0 text-white">{{titulo}}</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <form class="form-horizontal" [formGroup]=forma (ngSubmit)="guardarTipoDocumento()">
+                            <div class="form-group row">
+                                <label for="subfactor_id" class="col-sm-2 text-right control-label col-form-label">Factor</label>
+                                <div class="col-sm-3">
+                                    <select class="custom-select" formControlName="subfactor_id" name="subfactor_id" [class.is-invalid]="comboNoValido('subfactor_id')">
+                                        <option *ngFor="let factor of factores" [value]="factor.factor_id" >{{factor.descripcion}}</option>
+                                    </select>
+                                    <br>
+                                    <small *ngIf="comboNoValido('subfactor_id')" class="text-danger">Seleccione un factor</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tipo_ponderacion_id" class="col-sm-2 text-right control-label col-form-label">Tipo Ponderacion</label>
+                                <div class="col-sm-3">
+                                    <select class="custom-select" formControlName="tipo_ponderacion_id" name="tipo_ponderacion_id" [class.is-invalid]="comboNoValido('tipo_ponderacion_id')">
+                                        <option *ngFor="let tipoPonderacion of tiposPonderacion" [value]="tipoPonderacion.tipo_ponderacion_id" >{{tipoPonderacion.descripcion}}</option>
+                                    </select>
+                                    <br>
+                                    <small *ngIf="comboNoValido('tipo_ponderacion_id')" class="text-danger">Seleccione un factor</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="descripcion" class="col-sm-2 text-right control-label col-form-label">Descripcion</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" formControlName="descripcion" name="descripcion" placeholder="Descripcion" [class.is-invalid]="campoNoValido('descripcion')">
+                                    <small *ngIf="campoNoValido('descripcion')" class="text-danger">Este campo es obligatorio</small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ponderacion" class="col-sm-2 text-right control-label col-form-label">Ponderacion</label>
+                                <div class="col-sm-2">
+                                    <input type="number" step=".01" class="form-control" id="ponderacion" formControlName="ponderacion" name="ponderacion" placeholder="0.00" [class.is-invalid]="campoNoValido('ponderacion')">
+                                    <small *ngIf="campoNoValido('ponderacion')" class="text-danger">Este campo es obligatorio</small>
+                                </div>
+                            </div>
+                            <div class="form-group row text-right">
+                                <div class="col-12 text-right">
+                                    <button type="submit" class="btn btn-primary waves-effect waves-light m-r-10"><i class="fa fa-save"></i>&nbsp;&nbsp;Guardar
+                                        <span *ngIf="_tipoDocumentoService.loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    </button>
+                                    <a [routerLink]="['/tipos-documento']" class="btn btn-inverse waves-effect waves-light">Cancelar</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

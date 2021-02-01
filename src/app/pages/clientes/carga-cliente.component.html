@@ -1,0 +1,20 @@
+<input type="file" (change)="onChange($event)" #inputFile>
+<button (click)="cargar()">Cargar</button>
+<div *ngIf="isExcelFile === false">
+    This is not an Excel file
+</div>
+<span *ngIf="_clienteService.loading">SUBIENDO...</span>
+<span *ngIf="spinnerEnabled" class="fa fa-spin fa-spinner"></span>
+<br>
+<span>{{registros_nuevos}} Nuevos Registros</span>
+
+<!-- <table>
+    <th *ngFor="let key of keys">
+        {{key}}
+    </th>
+    <tr *ngFor="let item of dataSheet | async">
+        <td *ngFor="let key of keys">
+            {{item[key]}}
+        </td>
+    </tr>
+</table> -->

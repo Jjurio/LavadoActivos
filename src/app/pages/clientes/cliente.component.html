@@ -1,0 +1,356 @@
+<div class="carta-lg">
+    <ul class="nav nav-tabs">
+
+        <li class="nav-item">
+            <a id="" href="#DatoReporte-tab" class="nav-link active show" role="tab" data-toggle="tab">Reporte</a>
+        </li>
+        <li class="nav-item">
+            <a href="#MVR-tab" class="nav-link" role="tab" data-toggle="tab">MVR</a>
+        </li>
+        <li class="nav-item">
+            <a href="#Cal-Scoring-tab" class="nav-link" role="tab" data-toggle="tab">Scoring</a>
+        </li>
+        <li class="nav-item">
+            <a href="#Banca-tab" class="nav-link" role="tab" data-toggle="tab">Banca</a>
+        </li>
+        <li class="nav-item">
+            <a href="#Observaciones-tab" class="nav-link" role="tab" data-toggle="tab">Bitácora</a>
+        </li>
+        <li class="nav-item">
+            <a href="#ROS-tab" class="nav-link" role="tab" data-toggle="tab">Informes</a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+
+<div class="card fs-15">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label">Codigo Cliente</label>
+                    <div class="col-md-1">
+                        <input class="form-control fs-12" type="text" placeholder="Codigo Cliente">
+                    </div>
+
+                    <label class="col-md-3 control-label text-right col-form-label">Lugar de las operacion reportadas en el pais</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Madre de Dios</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-3 control-label text-right col-form-label">Lugar de las operacion reportadas en el extranjero</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Islas Georgias del Sur y Sandwich del Sur</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label">Tipo Resolucion</label>
+                    <div class="col-md-1">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Archivo</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Origen Reporte</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Relaciones de Corresponsalia</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Nro. Informe</label>
+                    <div class="col-md-1">
+                        <input class="form-control fs-12" type="text" placeholder="Nro. Informe">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Numero ROS</label>
+                    <div class="col-md-1">
+                        <input class="form-control fs-12" type="text" placeholder="Numero ROS">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Fecha Reporte</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label">Tipo Documento</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Documento Nacional de Identidad</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-1 control-label col-form-label">Nro. Documento</label>
+                    <div class="col-md-1">
+                        <input class="form-control fs-10" type="text" placeholder="Nro. Documento">
+                    </div>
+
+                    <label class="col-md-2 control-label text-right col-form-label fs-12">Fecha Deteccion Operaciones Sospechosas</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label fs-12">Fecha Inicio Operaciones Sospechosas</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label">Fecha Nacimiento</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label fs-12">Fecha Vinculacion Persona Natural</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label fs-12">Fecha Creacion Persona Juridica</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label fs-12">Fecha Vinculacion Persona Juridica</label>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control" style="width: 100%;">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label">Nombre / Razon Social</label>
+                    <div class="col-md-5">
+                        <input class="form-control fs-12" type="text" placeholder="Nombre / Razon Social">
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Tipo Cliente</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Persona Juridica</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label fs-12">Condicion Cliente</label>
+                    <div class="col-md-1">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Cliente Sensible</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label fs-12">Condicion Persona Natural</label>
+                    <div class="col-md-1">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Baja de Oficio</option>
+                        </select>
+                    </div>
+                    <label class="col-md-2 control-label text-right col-form-label fs-12">Condicion Persona Juridica</label>
+                    <div class="col-md-1">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Baja de Oficio</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-2 control-label text-right col-form-label fs-12">Condicion Reportado</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Dependiente del sujeto obligado</option>
+                        </select>
+                    </div>
+
+                    <label class="col-md-1 control-label text-right col-form-label">Actividad Economica</label>
+                    <div class="col-md-2">
+                        <select class="custom-select fs-12">
+                            <!-- <option *ngFor="let perfil of perfiles" [value]="perfil.perfil_id" >{{perfil.nombre_perfil}}</option> -->
+                            <option value="0" >(Seleccione)</option>
+                            <option value="1" >Independiente Informal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-md-1 control-label col-form-label fs-13">Tipo Moneda</label>
+                    <div class="form-group col-md-1">
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkSoles">Soles</label>
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkDolares">Dolares</label>
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkEuros">Euros</label>
+                    </div>
+
+                    <label class="col-md-1 control-label col-form-label fs-13">Metodos de Pago</label>
+                    <div class="form-group col-md-1">
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkSoles">Soles</label>
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkDolares">Dolares</label>
+                        <input type="checkbox" class="custom-control-input">
+                        <label class="custom-control-label" for="checkEuros">Euros</label>
+                    </div>
+
+                    <h5 class="p-h5">Medios de Pago</h5>
+                    <!--  <label class="col-md-1 control-label col-form-label">Codigo Cliente</label>
+                    <div class="col-md-1">
+                        <input class="form-control fs-12" type="text" placeholder="Codigo Cliente">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="alert alert-filter">
+    <div id="containerC" style="width:100%">
+        <div id="rowC">
+            <div id="containerC" style="width:100%">
+                <div id="rowC">
+                    <div id="leftC" style="width:10%">
+                        <h6>Medios de pago:</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="containerC" style="width:100%;font-size:10px;">
+                <div id="rowC">
+                    <div id="middleC" style="width:8%">
+                        <b>Ventanilla: </b>
+                    </div>
+                    <div id="middleC" style="width:20%">
+                        <input type="text" class="form-control-Registro" style="width:92px;text-align:right;" id="txtVentanilla">
+                    </div>
+                    <div id="middleC" style="width:5%">
+                        <b>ATM: </b>
+                    </div>
+                    <div id="middleC" style="width:20%">
+                        <input type="text" class="form-control-Registro" style="width:92px;text-align:right;" id="txtAtm">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Internet: </b>
+                    </div>
+                    <div id="middleC" style="width:20%">
+                        <input type="text" class="form-control-Registro" style="width:92px;text-align:right;" id="txtInternet">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Otro: </b>
+                    </div>
+                    <div id="middleC" style="width:1%">
+                        <input type="text" class="form-control-Registro" style="width:92px;text-align:right;" id="txtOtro">
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div id="containerC" style="width:100%">
+                <div id="rowC">
+                    <div id="leftC" style="width:10%">
+                        <h6>Banca:</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="containerC" style="width:100%;font-size:10px;">
+                <div id="rowC">
+                    <div id="middleC" style="width:8%">
+                        <b>Cuenta Corriente: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtCuentaCorrienteB">
+                    </div>
+                    <div id="middleC" style="width:7%">
+                        <b>Cuenta Ahorros: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtCuentaAhorroB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Transferencias: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtTransferenciasB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Giros: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtGirosB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Cheques de gerencia: </b>
+                    </div>
+                    <div id="middleC" style="width:1%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtChequesB">
+                    </div>
+                </div>
+                <div id="rowC">
+                    <div id="middleC" style="width:8%">
+                        <b>Tarjetas de credito: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtTarjetaCreditoB">
+                    </div>
+                    <div id="middleC" style="width:7%">
+                        <b>Creditos comerciales: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtCreditoComercialB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Creditos de consumo: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtCreditoConsumoB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Compra venta de divisas: </b>
+                    </div>
+                    <div id="middleC" style="width:9%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtDivisasB">
+                    </div>
+                    <div id="middleC" style="width:8%">
+                        <b>Otros: </b>
+                    </div>
+                    <div id="middleC" style="width:1%">
+                        <input type="text" class="form-control-Registro" style="width:80px;text-align:right;" id="txtOtrosB">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <input type="button" class="btn btn-sm btn-info" style="float:right;margin-right:15px" value="Registrar" onclick="RegistrarCliente()">
+</div> -->
